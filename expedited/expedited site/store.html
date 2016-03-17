@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="store">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,900,800,900italic,500,800italic' rel='stylesheet' type='text/css'>
+   </head>    
+
+          <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Expedited Trucking</a>
+            </div>
+         
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+  
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+  
+  <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Trucks and Truck Parts for Sale</h1>
+                          
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.js" />
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,900,800,900italic,500,800italic' rel='stylesheet' type='text/css'>
+    </head>
+    
+  
+    <body ng-controller="StoreController as store">        
+   <ul class="list-group">
+<!--
+ S
+-->
+<!--
+        <div class="panel" ng-show="tab === 1">
+    <h4>Description</h4>
+       <p>{{product.description}}</p>
+    </div>
+    
+        <div class="panel" ng-show="tab === 2">
+    <h4>Engine</h4>
+       <p>{{product.engine}}</p>
+    </div>
+        
+        <div class="panel" ng-show="tab === 3">
+    <h4>VIN</h4>
+       <p>{{product.vin}}</p>
+    </div>
+-->
+        
+        
+        
+        
+        <div ng-repeat="product in store.products" class = "products">
+        <h2> {{product.name}} </h2>
+        <h3> ${{product.price}} </h3>
+        <p> {{product.description}} </p>
+        <button ng-show="product.canPurchase"> Add To Cart </button>
+    </div>
+        </ul>
+
+        
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+    </body>
+    
+</html>
