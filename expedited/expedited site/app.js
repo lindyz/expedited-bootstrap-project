@@ -1,16 +1,16 @@
 (function(){
-    var app = angular.module('store', []);
+    var app = angular.module('store', [ ]);
     
     app.controller('StoreController', function(){
-    this.products = gems;    
+    this.products = trucks;    
     });
     
-    var gems = [
+    var trucks = [
     {
         name: '2001 Freightliner Columbia',
-        price: 4000,
-        description: 'Sold as is, for parts',
-        engine: 'Detroit Diesel'
+        price: 28000,
+        description: 'Good Solid Truck',
+        engine: 'Detroit Diesel',
         vin: 'FL234329842374',
         canPurchase: true,
         images: [
@@ -23,7 +23,7 @@
         name: '2005 Freightliner Columbia',
         price: 12000,
         description: 'Has a good Detroit Diesel Engine',
-        engine: 'Detroit Diesel'
+        engine: 'Detroit Diesel',
         vin: 'FL234329842374',
         canPurchase: true,
          images: [
@@ -39,7 +39,7 @@
         price: 11500,
         description: 'Ready to use, road ready',
         canPurchase: true,
-    engine: 'Detroit Diesel'
+    engine: 'Detroit Diesel',
         vin: 'FL234329842374',
             images: [
             {
