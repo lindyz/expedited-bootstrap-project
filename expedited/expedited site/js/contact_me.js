@@ -7,8 +7,7 @@ $(function() {
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
-            // something to have when submit produces an error ?
-            // Not decided if I need it yet
+  
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
@@ -50,7 +49,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:me@example.com?Subject=Message_Me from myprogrammingblog.com;>me@example.com</a> ? Sorry for the inconvenience!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:contact@expeditedtruckingllc.com?Subject=Message_Me from myprogrammingblog.com;>contact@expeditedtruckingllc.com</a> ? Sorry for the inconvenience!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
